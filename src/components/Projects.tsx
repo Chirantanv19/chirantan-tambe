@@ -24,15 +24,22 @@ export default function Projects() {
                     >
                         {/* Project Image Container */}
                         <div className="relative h-64 overflow-hidden">
-                            {/* Standard img is fine if unoptimized:true is set in next.config.ts, 
-      but using a string for alt fixes linting */}
-                            <img
-                                src={project.image}
-                                alt={project.title}
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-60" />
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-full h-full"
+                            >
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 cursor-pointer"
+                                />
+                            </a>
+
+                            <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-60 pointer-events-none" />
                         </div>
+
 
                         {/* Content */}
                         <div className="p-8">
