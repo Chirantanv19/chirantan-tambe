@@ -33,9 +33,9 @@ export default function Contact() {
                 toast.success("Message sent! I'll get back to you shortly.");
                 reset();
             } else {
-                throw new Error();
+                throw new Error("Failed to send");
             }
-        } catch (err) {
+        } catch {
             toast.error("Failed to send message. Please try again.");
         } finally {
             setLoading(false);
@@ -45,72 +45,29 @@ export default function Contact() {
     return (
         <section id="contact" className="py-32 container mx-auto px-6">
             <div className="glass rounded-[3rem] overflow-hidden grid lg:grid-cols-2">
-
-                {/* Contact Info Sidebar */}
                 <div className="p-12 lg:p-16 bg-primary/5 border-r border-white/5">
-                    <h2 className="text-4xl font-bold mb-6">Let&apos;s build <br /> something <span className="text-primary">epic</span>.</h2>
-                    <p className="text-gray-400 mb-12 text-lg">Have a project in mind? Reach out and let&apos;s make it happen.</p>
-
+                    <h2 className="text-4xl font-bold mb-6">{"Let's build something epic."}</h2>
+                    <p className="text-gray-400 mb-12 text-lg">{"Have a project in mind? Reach out and let's make it happen."}</p>
                     <div className="space-y-8">
                         <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
-                                <Mail size={24} />
-                            </div>
-                            <div>
-                                <p className="text-sm text-gray-400">Email me</p>
-                                <p className="font-semibold">hello@yourname.com</p>
-                            </div>
+                            <Mail className="text-primary" />
+                            <span>hello@yourname.com</span>
                         </div>
                         <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary">
-                                <MapPin size={24} />
-                            </div>
-                            <div>
-                                <p className="text-sm text-gray-400">Location</p>
-                                <p className="font-semibold">San Francisco, CA</p>
-                            </div>
+                            <MapPin className="text-secondary" />
+                            <span>San Francisco, CA</span>
                         </div>
                     </div>
                 </div>
-
-                {/* Actual Form */}
                 <form onSubmit={handleSubmit(onSubmit)} className="p-12 lg:p-16 space-y-6">
-                    <div className="space-y-2">
-                        <label className="text-sm font-medium text-gray-300">Full Name</label>
-                        <input
-                            {...register("name")}
-                            className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
-                            placeholder="Elon Musk"
-                        />
-                        {errors.name && <p className="text-red-400 text-xs mt-1">{errors.name.message}</p>}
-                    </div>
-
-                    <div className="space-y-2">
-                        <label className="text-sm font-medium text-gray-300">Email Address</label>
-                        <input
-                            {...register("email")}
-                            className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
-                            placeholder="elon@spacex.com"
-                        />
-                        {errors.email && <p className="text-red-400 text-xs mt-1">{errors.email.message}</p>}
-                    </div>
-
-                    <div className="space-y-2">
-                        <label className="text-sm font-medium text-gray-300">Message</label>
-                        <textarea
-                            {...register("message")}
-                            rows={4}
-                            className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
-                            placeholder="Tell me about your vision..."
-                        />
-                        {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>}
-                    </div>
-
-                    <button
-                        disabled={loading}
-                        className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-5 rounded-2xl transition-all flex items-center justify-center gap-3 disabled:opacity-50 group"
-                    >
-                        {loading ? <Loader2 className="animate-spin" /> : <><Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /> Send Message</>}
+                    <input {...register("name")} placeholder="Full Name" className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 outline-none focus:border-primary" />
+                    {errors.name && <p className="text-red-400 text-xs">{errors.name.message}</p>}
+                    <input {...register("email")} placeholder="Email" className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 outline-none focus:border-primary" />
+                    {errors.email && <p className="text-red-400 text-xs">{errors.email.message}</p>}
+                    <textarea {...register("message")} rows={4} placeholder="Message" className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 outline-none focus:border-primary resize-none" />
+                    {errors.message && <p className="text-red-400 text-xs">{errors.message.message}</p>}
+                    <button disabled={loading} className="w-full bg-primary py-5 rounded-2xl font-bold flex items-center justify-center gap-3">
+                        {loading ? <Loader2 className="animate-spin" /> : <><Send size={18} /> Send Message</>}
                     </button>
                 </form>
             </div>
