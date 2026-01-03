@@ -15,7 +15,7 @@ export const projects: Project[] = [
         title: "Quantum Dashboard",
         description: "Real-time analytics engine with neural network visualizations and predictive data modeling.",
         tech: ["Next.js 15", "TypeScript", "Tailwind v4", "Recharts"],
-        link: "luxury-hotel-chirantan.vercel.app",
+        link: "https://luxury-hotel-chirantan.vercel.app",
         github: "https://github.com/Chirantanv19/luxury-hotel",
         image: "one.jpeg",
     },
