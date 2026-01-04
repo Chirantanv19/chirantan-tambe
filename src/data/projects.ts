@@ -12,7 +12,7 @@ export interface Project {
 export const projects: Project[] = [
     {
         id: 1,
-        title: "Quantum Dashboard",
+        title: "Luxury Hotel",
         description: "Real-time analytics engine with neural network visualizations and predictive data modeling.",
         tech: ["Next.js 15", "TypeScript", "Tailwind v4", "Recharts"],
         link: "https://luxury-hotel-chirantan.vercel.app",
@@ -21,20 +21,20 @@ export const projects: Project[] = [
     },
     {
         id: 2,
-        title: "Stellar E-Commerce",
+        title: "zenith-residences",
         description: "High-end marketplace with server-side filtering, sub-100ms transitions, and Stripe integration.",
         tech: ["React", "PostgreSQL", "Prisma", "Stripe"],
-        link: "https://demo.com",
-        github: "https://github.com",
+        link: "https://zenith-residences-chirantan.vercel.app",
+        github: "https://github.com/Chirantanv19/zenith-residences",
         image: "two.jpeg",
     },
     {
         id: 3,
-        title: "Nexus OS",
+        title: "Titan Build",
         description: "A browser-based operating system interface built with custom hooks and high-performance animations.",
         tech: ["Next.js", "Framer Motion", "Zustand", "Lucide"],
-        link: "https://demo.com",
-        github: "https://github.com",
+        link: "https://titan-build.vercel.app",
+        github: "https://github.com/Chirantanv19/Titan-Build",
         image: "three.jpeg",
     },
     {
