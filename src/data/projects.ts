@@ -17,7 +17,7 @@ export const projects: Project[] = [
         tech: ["Next.js 15", "TypeScript", "Tailwind v4", "Recharts"],
         link: "https://luxury-hotel-chirantan.vercel.app",
         github: "https://github.com/Chirantanv19/luxury-hotel",
-        image: "one.jpeg",
+        image: "one.png",
     },
     {
         id: 2,
@@ -26,7 +26,7 @@ export const projects: Project[] = [
         tech: ["React", "PostgreSQL", "Prisma", "Stripe"],
         link: "https://zenith-residences-chirantan.vercel.app",
         github: "https://github.com/Chirantanv19/zenith-residences",
-        image: "two.jpeg",
+        image: "two.png",
     },
     {
         id: 3,
@@ -35,7 +35,7 @@ export const projects: Project[] = [
         tech: ["Next.js", "Framer Motion", "Zustand", "Lucide"],
         link: "https://titan-build.vercel.app",
         github: "https://github.com/Chirantanv19/Titan-Build",
-        image: "three.jpeg",
+        image: "three.png",
     }
 
 
