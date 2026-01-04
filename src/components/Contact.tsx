@@ -51,11 +51,11 @@ export default function Contact() {
                     <div className="space-y-8">
                         <div className="flex items-center gap-4">
                             <Mail className="text-primary" />
-                            <span>hello@yourname.com</span>
+                            <span>chirantannt19@gmail.com</span>
                         </div>
                         <div className="flex items-center gap-4">
                             <MapPin className="text-secondary" />
-                            <span>San Francisco, CA</span>
+                            <span>Electronic City, Banglore</span>
                         </div>
                     </div>
                 </div>
