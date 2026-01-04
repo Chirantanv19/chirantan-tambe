@@ -36,7 +36,16 @@ export const projects: Project[] = [
         link: "https://titan-build.vercel.app",
         github: "https://github.com/Chirantanv19/Titan-Build",
         image: "three.png",
+    }, {
+        id: 4,
+        title: "Urban Palate",
+        description: "A premium full-stack dining platform built with Next.js 16 and Supabase, featuring a seamless reservation engine and a luxury glassmorphism UI.",
+        tech: ["Next.js", "Supabase,", "Auths", "Lucide"],
+        link: "https://urban-palate-chirantan.vercel.app",
+        github: "https://github.com/Chirantanv19/urban-palate",
+        image: "four.png",
     }
 
 
 ];
+
