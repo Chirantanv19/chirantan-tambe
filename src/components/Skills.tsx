@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Code2, Cpu, Globe, Layout, Layers, Terminal } from "lucide-react";
 
 const skills = [
-  { name: "Next.js 15", icon: <Layout size={20} />, level: "Expert", color: "text-blue-400" },
+  { name: "Next.js 16", icon: <Layout size={20} />, level: "Expert", color: "text-blue-400" },
   { name: "TypeScript", icon: <Code2 size={20} />, level: "Advanced", color: "text-blue-500" },
   { name: "Tailwind v4", icon: <Layers size={20} />, level: "Expert", color: "text-cyan-400" },
   { name: "Node.js", icon: <Terminal size={20} />, level: "Advanced", color: "text-green-500" },
