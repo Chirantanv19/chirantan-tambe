@@ -44,7 +44,17 @@ export const projects: Project[] = [
         link: "https://urban-palate-chirantan.vercel.app",
         github: "https://github.com/Chirantanv19/urban-palate",
         image: "four.png",
+    },
+    {
+        id: 5,
+        title: "The Royal Bistro",
+        description: "A premium full-stack dining platform built with Next.js 16 and Neon , featuring a seamless reservation engine and a luxury glassmorphism UI.",
+        tech: ["Next.js", "Neon,", "NextAuths", "UploadThings "],
+        link: "https://the-royal-bistro.vercel.app",
+        github: "https://github.com/Chirantanv19/the-royal-bistro",
+        image: "five.png",
     }
+
 
 
 ];
