@@ -49,24 +49,20 @@ export const projects: Project[] = [
         id: 5,
         title: "The Royal Bistro",
         description: "A premium full-stack dining platform built with Next.js 16 and Neon , featuring a seamless reservation engine and a luxury glassmorphism UI.",
-        tech: ["Next.js", "Neon", "NextAuths", "UploadThings "],
+        tech: ["Next.js", "Neon", "NextAuths", "UploadThings"],
         link: "https://the-royal-bistro.vercel.app",
         github: "https://github.com/Chirantanv19/the-royal-bistro",
         image: "five.png",
     },
-     {
+
+    {
         id: 6,
         title: "True Smile",
-        description: "A premium full-stack dining platform built with Next.js 16 and Neon , featuring a seamless reservation engine and a luxury glassmorphism UI.",
-        tech: ["Next.js", "Neon", "Three.js", " "],
+        description: "A premium full-stack dental bookings platform built with Next.js 16 and Neon , featuring a seamless reservation engine and a luxury glassmorphism UI.",
+        tech: ["Next.js", "Neon", "Three.js", "Auto-message"],
         link: "https://truesmile.vercel.app",
         github: "https://github.com/Chirantanv19/TrueSmile",
-        image: "Six.png",
-    },
-
-
-
-
-
+        image: "six.png",
+    }
 ];
 
