@@ -5,6 +5,7 @@ import Skills from "@/components/Skills"; // New import
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import { Toaster } from "sonner";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export default function Home() {
   return (
