@@ -14,7 +14,7 @@ export default function Home() {
       <Toaster position="top-center" richColors theme="dark" />
 
       <Navbar />
-
+      <SmoothScroll>
       <div className="flex flex-col gap-0">
         <Hero />
         <About />
@@ -33,6 +33,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+          </SmoothScroll>
     </main>
   );
 }
