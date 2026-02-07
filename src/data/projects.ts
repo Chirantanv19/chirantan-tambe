@@ -53,7 +53,18 @@ export const projects: Project[] = [
         link: "https://the-royal-bistro.vercel.app",
         github: "https://github.com/Chirantanv19/the-royal-bistro",
         image: "five.png",
-    }
+    },
+     {
+        id: 6,
+        title: "True Smile",
+        description: "A premium full-stack dining platform built with Next.js 16 and Neon , featuring a seamless reservation engine and a luxury glassmorphism UI.",
+        tech: ["Next.js", "Neon", "Three.js", " "],
+        link: "https://truesmile.vercel.app",
+        github: "https://github.com/Chirantanv19/TrueSmile",
+        image: "Six.png",
+    },
+
+
 
 
 
